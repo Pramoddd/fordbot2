@@ -32,13 +32,13 @@
 				function assertion(options, callback) {
 					var jsonData = {
 						"clientId": botOptions.clientId,
-						"clientSecret": "0H54O1x1S//QbqzoNJ5j/GOJSNL8J2egnZO2atgKE7o=",
+						"clientSecret": "",
 						"identity": botOptions.userIdentity,
 						"aud": "",
 						"isAnonymous": true
 					};
 					$.ajax({
-						url: "https://fbintegration.kore.com/jwtservice/api/users/sts",
+						url: "https://botservices.kore.net/botservices/ford/api/1.0/jwt",
 						type: 'post',
 						data: jsonData,
 						dataType: 'json',
